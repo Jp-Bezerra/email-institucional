@@ -41,11 +41,11 @@ section > h1 {
     text-shadow: -4px 0px 0px var(--cor3);
 }
 
-label > p {
+form p {
     margin-left: 12px;
 }
 
-label > input {
+form input {
     background-color: var(--cor2);
     color: rgb(224, 217, 217);
     padding: 1px 5px;

@@ -13,23 +13,27 @@
     </header>
     <section>
         <h1>CRIE SEU EMAIL INSTITUCIONAL</h1>
-        <label>
-            <p>NOME COMPLETO</p>
-            <input type="text" id="nome"> <br>
-        </label>
-        <label>
-            <p>EMAIL PESSOAL</p>
-            <input type="email" name="email" id="email"> <br>
-        </label>
-        <label>
-            <p>MATRÍCULA</p>
-            <input type="text" id="matricula"> <br>
-        </label>
-        <label>
-            <p>TELEFONE</p>
-            <input type="tel" name="telefone" id="telefone"> <br>
-        </label>
-        <input type="button" value="ENVIAR" id="botao">
+        <form action="cadastro.php" method="post">
+            <p>
+                <label for="inome">NOME COMPLETO</label> <br>
+                <input type="text" name="nome" id="inome" required>
+            </p>
+            <p>
+                <label for="iemail">EMAIL PESSOAL</label> <br>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <p>
+                <label for="imatricula">MATRÍCULA</label> <br>
+                <input type="text" name="matricula" id="imatricula">
+            </p>
+            <p>
+                <label for="itelefone">TELEFONE</label> <br>
+                <input type="tel" name="telefone" id="itelefone">
+            </p>
+            <p>
+                <input type="submit" value="ENVIAR" id="botao">
+            </p>
+        </form>
     </section>
     <footer>
         <nav>
