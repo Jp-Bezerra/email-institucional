@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fontes/Poppins-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fontes/Poppins-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #2C4E80;
+    --cor1: #00215E;
+    --cor2: #00124F;
+    --cor3: #FFC55A;
+    --cor4: #F79431;
+    --cor5: #FE7A36;
+
+    --fonte-padrao: 'Poppins', Arial, Verdana, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    color: white;
+}
+
+header {
+    background-color: var(--cor0);
+    padding: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.336);
+}
+
+main {
+    width: 90vw;
+    margin: auto;
+    padding: 10px;
+}
+
+main > h1 {
+    color: var(--cor5);
+    font-size: 3em;
+    text-align: center;
+    text-shadow: -3px 0px 0px var(--cor3);
+}
+
+main > form.conteiner {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+main > form.conteiner > div.item {
+    padding: 5px;
+    text-align: center;
+}
+
+main > form > div > label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+main > form > div > input {
+    background-color: var(--cor2);
+    color: white;
+    width: 230px;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+main > form > div > input:focus-within{
+    background-color: var(--cor0);
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input#botao {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    width: 100px;
+    font-weight: bold;
+    border: none;
+    margin-top: 10px;
+}
+
+input#botao:hover {
+    background-color: var(--cor5);
+    color: var(--cor0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
+}
+
+footer {
+    display: none;
+}

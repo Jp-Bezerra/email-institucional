@@ -5,36 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Institucional</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilo/estilo.css">
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <header>
         <a href="https://www.unirn.edu.br/" rel="prev" target="_self"><img src="imagens/logotipo.png" alt="Logotipo UNI-RN"></a>
     </header>
-    <section>
+    <main>
         <h1>CRIE SEU EMAIL INSTITUCIONAL</h1>
-        <form action="cadastro.php" method="post">
-            <p>
-                <label for="inome">NOME COMPLETO</label> <br>
-                <input type="text" name="nome" id="inome" required>
-            </p>
-            <p>
-                <label for="iemail">EMAIL PESSOAL</label> <br>
-                <input type="email" name="email" id="iemail">
-            </p>
-            <p>
-                <label for="imatricula">MATRÍCULA</label> <br>
-                <input type="text" name="matricula" id="imatricula">
-            </p>
-            <p>
-                <label for="itelefone">TELEFONE</label> <br>
-                <input type="tel" name="telefone" id="itelefone">
-            </p>
-            <p>
+        <form action="cadastro.php" method="post" class="conteiner" autocomplete="on">
+            <div class="item">
+                <label for="inome">NOME COMPLETO</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name">
+            </div>
+            <div class="item">
+                <label for="iemail">EMAIL PESSOAL</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </div>
+            <div class="item">
+                <label for="imatricula">MATRÍCULA</label>
+                <input type="number" name="matricula" id="imatricula" required>
+            </div>
+            <div class="item">
+                <label for="itelefone">TELEFONE</label>
+                <input type="tel" name="telefone" id="itelefone" required autocomplete="tel">
+            </div>
+            <div>
                 <input type="submit" value="ENVIAR" id="botao">
-            </p>
+            </div>
         </form>
-    </section>
+    </main>
     <footer>
         <nav>
             <a href="https://www.instagram.com/unirn" rel="external" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
