@@ -87,10 +87,6 @@ main > form > div > input:focus-within{
     background-color: var(--cor0);
 }
 
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-}
-
 input#botao {
     background-color: var(--cor4);
     color: var(--cor1);

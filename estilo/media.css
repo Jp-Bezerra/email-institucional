@@ -1,1 +1,37 @@
 @charset "UTF-8";
+
+@media screen and (min-width: 740px) {
+    main {
+        margin-top: 20px;
+        max-width: 600px;
+    }
+
+    main > h1 {
+        font-size: 3.2em;
+        width: 385px;
+        padding: 5px;
+        margin: auto;
+    }
+
+    main > form.conteiner {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    main > form.conteiner > div.item {
+        flex: 1 1 45%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    main > form > div > label {
+        margin-bottom: 2px;
+    }
+
+    input#botao {
+        display: block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 550px;
+    }
+}
