@@ -14,7 +14,7 @@
     </header>
     <main>
         <h1>CRIE SEU EMAIL INSTITUCIONAL</h1>
-        <form action="cadastro.php" method="post" class="conteiner" autocomplete="on">
+        <form action="#" method="post" class="conteiner" autocomplete="on">
             <div class="item">
                 <label for="inome">NOME COMPLETO</label>
                 <input type="text" name="nome" id="inome" required autocomplete="name">
@@ -32,9 +32,10 @@
                 <input type="tel" name="telefone" id="itelefone" required autocomplete="tel">
             </div>
             <div>
-                <input type="submit" value="ENVIAR" id="botao">
+                <input type="submit" value="ENVIAR" id="botao" onclick="cadastrar()">
             </div>
         </form>
     </main>
+    <script src="script/script.js"></script>
 </body>
 </html>
